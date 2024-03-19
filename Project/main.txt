@@ -50,7 +50,7 @@ Step 2: Create a Jenkins Server :-
 # yum install docker 
 
 - and start docker service 
-# ststemctl start docker
+# systemctl start docker
 
 - goto jenkins instance goto Security group allow the port number 8080 and save it
 - then copy the IP address of Jenkins instance and open new tab past ip-address + :8080
