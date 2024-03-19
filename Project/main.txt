@@ -41,7 +41,7 @@ Step 2: Create a Jenkins Server :-
 - if jenkins is not install then install it (form jenkins.io)
 
 - start the jenkins service
-# systemctl start jenkisn
+# systemctl start jenkins
 
 - install git 
 # yum install git 
