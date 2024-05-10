@@ -20,7 +20,7 @@ Step 1: Build an ECS Cluster :-
   - update the commands in line no 450 -453 (refer from jenkins.io)
 
 - Change the working directory to the directory that was created when you cloned the repository. At the command prompt, type or paste the following.
-   Where "<key_name>" is the name of an SSH key in the region where you're creating the ECS cluster.
+   Where "<key_name>"(ec2 instance key pair name) is the name of an SSH key in the region where you're creating the ECS cluster.
 # aws cloudformation create-stack --template-body file://ecs-cluster.template --stack-name EcsClusterStack --capabilities CAPABILITY_IAM --tags Key=Name,Value=ECS --region us-west-2 --parameters ParameterKey=KeyName,
   ParameterValue=<key_name> ParameterKey=EcsCluster,ParameterValue=getting-started ParameterKey=AsgMaxSize,ParameterValue=2
 
